@@ -14,7 +14,7 @@ class Register extends React.Component
               <input type="text" placeholder="Email" className="textbox" id="email"/><br />
               <input type="text" placeholder="UserName" className="textbox" id="userName"/><br />
               <input type="password" placeholder="Password" className="textbox" id="password"/><br />
-              <input type="password" placeholder="Retype-Password" className="textbox" id="retypepassword"/><br />
+              <input type="password" placeholder="Re-Enter Password" className="textbox" id="retypepassword"/><br />
               <button className="custom-button">Register</button>
             </form>
             </container>
