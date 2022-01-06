@@ -3,10 +3,32 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Login from './Login' 
+import Register from './Register';
 import reportWebVitals from './reportWebVitals';
+import  {BrowserRouter as Router,
+         Route,Link,Routes} from 'react-router-dom'; 
 
-ReactDOM.render(
-    <App />,
+ReactDOM.render( 
+  <Router> 
+    <div> 
+    <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+             <Link to="/login">Login</Link>
+          </li>
+          <li>
+             <Link to="/Register">Register</Link>
+          </li>
+        </ul>
+    <Routes>
+    <Route path="/"  element={<App />} />  
+    <Route path="/login" element={<Login />} />  
+    <Route path="/Register" element={<Register />} />   
+    </Routes>
+    </div>
+  </Router>, 
   document.getElementById('root')
 );
 

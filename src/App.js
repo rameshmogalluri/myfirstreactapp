@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Login from './Login.js';
+import React,{Component, component} from 'react';
+import { render } from 'react-dom';
 
-function App() {
+class App extends React.Component {
+  render(){
   return (
     <div className="App">
-      <Login />
+      <h1>Home</h1>
     </div>
   );
 }
-
+}
 export default App;

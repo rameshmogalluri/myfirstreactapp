@@ -6,7 +6,7 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-.login-text{
+.textbox{
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -14,7 +14,7 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
-.login-button{
+.custom-button{
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -24,6 +24,6 @@
   cursor: pointer;
   margin-right: 2em;
 }
-.login-button:hover{
+.custom-button:hover{
     background-color: #45a049;
 }

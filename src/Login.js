@@ -1,9 +1,9 @@
 import React,{Component, component} from 'react';
 import './login.css'
 
-class Login extends Component
+class Login extends React.Component
 {
-    login(event) {
+    Login(event) {
         let email=document.getElementById("email");
         let password=document.getElementById("password"); 
 
@@ -15,10 +15,11 @@ class Login extends Component
        return(
            <div className="login-div">
               <container>
+                  <h1>User Login</h1>
                     <form>
-                        <input type="text" placeholder="Enter your Email" className="login-text" id="email"/><br />
-                        <input type="password" placeholder="Enter your Password" className="login-text" id="password"/><br />
-                        <button className="login-button" onClick={this.login}>Login</button> <a href="#">New User</a>
+                        <input type="text" placeholder="Enter your Email" className="textbox" id="email"/><br />
+                        <input type="password" placeholder="Enter your Password" className="textbox" id="password"/><br />
+                        <button className="custom-button" onClick={this.Login}>Login</button>
                     </form>
                     
               </container>
@@ -26,4 +27,4 @@ class Login extends Component
        );
    }
 }
-export default Login;
+export default Login
