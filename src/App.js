@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import React,{Component, component} from 'react';
-import { render } from 'react-dom';
+import './css/App.css';
+import React,{Component} from 'react';
 
 class App extends React.Component {
   render(){

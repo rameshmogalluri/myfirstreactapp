@@ -6,22 +6,13 @@ import Login from './Login'
 import Register from './Register';
 import reportWebVitals from './reportWebVitals';
 import  {BrowserRouter as Router,
-         Route,Link,Routes} from 'react-router-dom'; 
+         Route,Routes} from 'react-router-dom'; 
+import NavPage from './nav.js'
 
 ReactDOM.render( 
   <Router> 
     <div> 
-    <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-             <Link to="/login">Login</Link>
-          </li>
-          <li>
-             <Link to="/Register">Register</Link>
-          </li>
-        </ul>
+    <NavPage />
     <Routes>
     <Route path="/"  element={<App />} />  
     <Route path="/login" element={<Login />} />  

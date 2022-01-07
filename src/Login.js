@@ -1,5 +1,5 @@
-import React,{Component, component} from 'react';
-import './login.css'
+import React,{Component} from 'react';
+import './css/login.css'
 
 class Login extends React.Component
 {
@@ -54,7 +54,6 @@ class Login extends React.Component
 
        return(
            <div className="login-div">
-              <container>
                   <h1>User Login</h1>
                     <form onSubmit={this.formSubmit.bind(this)}>
                         <input type="text" placeholder="Enter your Email" className="textbox" id="email" refs="email" onChange={this.handleChange.bind(this,"email")}  value={this.state.fields["email"]}/>
@@ -63,8 +62,6 @@ class Login extends React.Component
                         <span style={{ color: "red" }}>{this.state.errors["password"]}</span><br />
                         <button className="custom-button">Login</button>
                     </form>
-                    
-              </container>
            </div>
        );
    }

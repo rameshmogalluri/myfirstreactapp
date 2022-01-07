@@ -1,12 +1,11 @@
-import React,{Component, component} from 'react';
-import './register.css'
-import './login.css'
+import React,{Component} from 'react';
+import './css/register.css'
+import './css/login.css'
 class Register extends React.Component
 {
     render(){
         return(
             <div className="register-div">
-            <container>
             <h1> New User </h1>
             <form>
               <input type="text" placeholder="FirstName" className="textbox" id="firstName"/><br />
@@ -17,7 +16,6 @@ class Register extends React.Component
               <input type="password" placeholder="Re-Enter Password" className="textbox" id="retypepassword"/><br />
               <button className="custom-button">Register</button>
             </form>
-            </container>
             </div>
         );
     }
